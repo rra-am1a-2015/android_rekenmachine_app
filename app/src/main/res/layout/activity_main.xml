@@ -9,31 +9,44 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:background="#d4d3d3"
         android:padding="10dp"
         android:text="Rekenmachine"
         android:textColor="#060303"
-        android:textSize="24sp"
+        android:textSize="24sp" />
 
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="-"
+        android:onClick="decrementNumber1"/>
 
     <TextView
+        android:id="@+id/txtNumber1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="#bbbbbb"
-        android:padding="10dp"
         android:text="0"
         android:textColor="#060303"
-        android:textSize="24sp"
-        android:id="@+id/txt_number"/>
+        android:textSize="24sp" />
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="+"/>
+
+    </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="updateNumber"
         android:text="Bereken"
-        android:textSize="24sp"
-        android:onClick="updateNumber"/>
+        android:textSize="24sp" />
 
 </LinearLayout>

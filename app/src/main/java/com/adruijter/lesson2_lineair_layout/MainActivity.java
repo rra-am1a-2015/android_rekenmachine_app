@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
 {
+    // Fields
+    private int number1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -14,10 +17,10 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
     }
 
-    public void updateNumber(View view)
+    public void decrementNumber1(View view)
     {
-        int number = 42;
-        TextView txtNumber = (TextView)findViewById(R.id.txt_number) ;
-        txtNumber.setText(Integer.toString(number));
+        number1 = number1 - 1;
+        TextView txtNumber = (TextView) findViewById(R.id.txtNumber1);
+        txtNumber.setText(Integer.toString(number1));
     }
 }
